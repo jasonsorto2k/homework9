@@ -13,21 +13,41 @@ public class task6 {
         countries[3] = "Spain";
         countries[4] = "El Salvador";
 
-        String[] capitals = new String[5];
-
-        capitals[0] = "Rome";
-        capitals[1] = "Paris";
-        capitals[2] = "Athens";
-        capitals[3] = "Madrid";
-        capitals[4] = "San Salvador";
-
         for (int i = 0; i < countries.length; i++) {
-            System.out.println(capitals[i]+" is the capital of "+countries[i]);
 
+            String country = countries[i];
+            String capital = "";
 
-        }
+            switch (country){
+
+                case "Italy":
+                    capital = "Rome";
+                    break;
+
+                case "France":
+                    capital = "Paris";
+                    break;
+
+                case "Greece":
+                    capital = "Athens";
+                    break;
+
+                case "Spain":
+                    capital = "Madrid";
+                    break;
+
+                case "El Salvador":
+                    capital = "San Salvador";
+                    break;
+
+                default:
+                    System.out.println("Null");
+                    break;
 
             }
+            System.out.println(capital+ " is the capital of "+ country);
         }
+    }
+}
 
 
